@@ -1,0 +1,106 @@
+.left {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.left .title {
+    font-family: 'Kanit', sans-serif;
+    text-shadow: none;
+    color: rgb(254, 254, 254);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form-label {
+    text-align: left;
+    text-shadow: none;
+    color: rgb(254, 254, 254);
+    margin-bottom: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+}
+
+input.form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(254, 254, 254);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 14px 18px;
+    font-size: 1.05em;
+    border-radius: .25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+input.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input.form-control:focus {
+    color: rgb(254, 255, 254);
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: rgb(255, 255, 255, 0.25);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.7);
+}
+
+.btn.btn-primary { 
+    background-color: #CC0000;
+    border-color: #CC0000;
+    color: white;
+    padding: 14px 18px;
+    font-size: 1.05em;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn.btn-primary:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn.btn-outline-secondary-custom {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 14px 18px;
+    font-size: 1.05em;
+    transition: all 0.3s ease;
+}
+
+.btn.btn-outline-secondary-custom:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: white;
+}
+
+.btn.btn-outline-secondary-custom:focus {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: white;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.6);
+}
+
+.alert.alert-danger {
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+}
+
+.alert.alert-danger ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.alert.alert-danger li {
+    margin-bottom: 5px;
+}

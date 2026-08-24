@@ -1,0 +1,116 @@
+.main-nav .nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.main-nav .nav-item {
+  margin-right: 1.2rem;
+}
+
+.main-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+.main-nav .pokemon-link {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 0.3rem;
+  white-space: nowrap;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.main-nav .pokemon-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: #CC0000;
+  border-radius: 3px;
+  transform: scaleX(0) translateX(-50%);
+  transform-origin: center center;
+  transition: transform 0.05s ease-out;
+}
+
+.main-nav .pokemon-link:hover::after,
+.main-nav .pokemon-link.active::after {
+  transform: scaleX(1) translateX(-50%);
+}
+
+.main-nav .pokemon-link:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.main-nav .user-greeting .pokemon-link {
+  color: rgba(255, 255, 255, 0.9);
+  cursor: default;
+  font-weight: normal;
+  padding-bottom: 0.5rem;
+}
+
+.main-nav .user-greeting .pokemon-link:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.9);
+  transform: none;
+}
+
+.main-nav .user-greeting .pokemon-link::after {
+  content: none;
+}
+
+.main-nav .btn.access-button {
+  background-color: #CC0000;
+  color: #111111;
+  border: 1px solid #CC0000;
+  letter-spacing: 0.05em;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.main-nav .access-button:hover {
+  background-color: transparent;
+  color: #CC0000;
+  border-color: #CC0000;
+}
+
+.main-nav .access-button::after {
+  content: none;
+}
+
+.main-nav .nav-item .logout-button {
+  background-color: #CC0000;
+  color: #FFFFFF;
+  border: 1px solid #CC0000;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.main-nav .nav-item .logout-button:hover {
+  background-color: #bd2130;
+  color: #FFFFFF;
+  border-color: #bd2130;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.main-nav .nav-item .logout-button:active {
+  transform: scale(0.98);
+}

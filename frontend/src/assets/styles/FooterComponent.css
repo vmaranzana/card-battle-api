@@ -1,0 +1,17 @@
+.app-footer {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.7); 
+  text-align: center;
+  padding: 1rem 0; 
+  margin-top: 0.5rem; 
+  /* La línea divisoria */
+  border-top: 1px solid #1c1c1c;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3); 
+  z-index: 999; 
+}
+
+/* Ajustes para el párrafo dentro del footer */
+.app-footer p {
+  margin-bottom: 0; 
+  font-size: 0.85rem; 
+}

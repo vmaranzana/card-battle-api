@@ -1,0 +1,23 @@
+/* Import de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.layout-grid {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto; /* header - main - footer */
+  background-color: #050505;  
+}
+
+/* El main ocupa el alto disponible y centra el contenido */
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}

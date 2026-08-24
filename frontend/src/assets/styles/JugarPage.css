@@ -1,0 +1,184 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('../images/tablero1.png'); 
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden; 
+}
+
+.instruction-message {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-top: -10px;
+  margin-bottom: 25px;
+  background-color: transparent;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* ZONAS de cartas (mano y servidor) */
+.card-zone {
+  border-radius: 1rem;
+  border: 5px solid rgba(0, 0, 0, 1); 
+  padding: 0.8rem; 
+  width: 100%;
+  max-width: 960px; 
+  margin: 1rem auto; 
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0.8rem; 
+  text-transform: uppercase;
+}
+
+.server-cards-placeholder,
+.player-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px; 
+  flex-wrap: wrap;
+  padding: 15px 0; 
+  min-height: 250px; 
+  align-items: center; 
+}
+
+.game-board {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; 
+  margin: 20px 0;
+  width: 100%;
+  max-width: 1000px; 
+}
+
+.played-cards {
+  display: flex;
+  justify-content: center;
+  gap: 100px; 
+  width: 100%;
+  min-height: 300px; 
+  align-items: center;
+}
+
+.player-played-card,
+.server-played-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-played-card h4,
+.server-played-card h4 {
+  color:#050505;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.waiting-message {
+  color: white;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.round-result {
+  background-color: #050505;
+  padding: 20px 30px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-size: 1.3em;
+  border: 1px solid rgba(#050505, 0.6);
+}
+
+.round-result p strong {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Overlay para el resultado final de la partida */
+.game-result-overlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000; 
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.game-result-modal {
+  background-color: #CC0000; 
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+  color: white;
+  border: 2px solid #050505;
+  max-width: 90%; 
+}
+
+.game-result-modal h3 {
+  margin-bottom: 20px;
+  color: #050505;
+  font-weight: bold;  
+  font-size: 2.5em;
+}
+
+.game-result-modal p {
+  font-size: 1.5em;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.error-message {
+  color: #f7d7da; 
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgba(220, 53, 69, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #dc3545;
+  box-shadow: 0 0 15px rgba(220, 53, 69, 0.5);
+}
+
+/* Estilo para los botones dentro del modal de resultados o errores */
+.game-result-modal button,
+.game-container .btn {
+  background-color: #050505; 
+  color: white; 
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.game-result-modal button:hover,
+.game-container .btn:hover {
+  background-color: white;
+  color: #CC0000;
+  border: white ;
+}
